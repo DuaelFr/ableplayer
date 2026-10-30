@@ -118,7 +118,7 @@ function addBuildplayerFunctions(AblePlayer) {
 		if (this.hasPlaylist && this.showNowPlaying) {
 			this.$nowPlayingDiv = $('<div>',{
 				'class' : 'able-now-playing',
-				'aria-live' : 'assertive',
+				'aria-live' : 'polite',
 				'aria-atomic': 'true'
 			});
 		}
@@ -148,7 +148,7 @@ function addBuildplayerFunctions(AblePlayer) {
 
 		this.$speed = $('<span>',{
 			'class' : 'able-speed',
-			'aria-live' : 'assertive',
+			'aria-live' : 'polite',
 			'aria-atomic' : 'true'
 		}).text(this.translate( 'speed', 'Speed' ) + ': 1x');
 
